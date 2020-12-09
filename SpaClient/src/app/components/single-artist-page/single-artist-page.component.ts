@@ -11,7 +11,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class SingleArtistPageComponent implements OnInit {
 
-  baseUrl = 'https://localhost:44372/';
+  baseUrl = 'https://spa586db.azurewebsites.net/';
   public artist: Artist;
   id: number;
   private sub: any;

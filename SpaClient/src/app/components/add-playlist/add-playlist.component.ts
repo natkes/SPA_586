@@ -10,7 +10,7 @@ import {Router} from '@angular/router';
   styleUrls: ['./add-playlist.component.css']
 })
 export class AddPlaylistComponent implements OnInit {
-  baseUrl = 'https://localhost:44372/';
+  baseUrl = 'https://spa586db.azurewebsites.net/';
   createPlaylistForm;
   httpG: HttpClient;
   playlist: Playlist;

@@ -11,7 +11,7 @@ import {FormBuilder} from '@angular/forms';
 })
 export class SinglePlaylistPageComponent implements OnInit {
 
-  baseUrl = 'https://localhost:44372/';
+  baseUrl = 'https://spa586db.azurewebsites.net/';
   public playlist: Playlist;
   id: number;
   private sub: any;

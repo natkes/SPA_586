@@ -20,7 +20,7 @@ namespace SpaServer
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
-            ConnectionString = Configuration.GetConnectionString("SPA_DB");
+            ConnectionString = Configuration.GetConnectionString("SPA_DB_Mig");
         }
 
         public IConfiguration Configuration { get; }
@@ -31,6 +31,7 @@ namespace SpaServer
         {
             services.AddControllers();
             services.AddDbContext<SPA_DBContext>(options => options.UseSqlServer(ConnectionString));
+            services.AddAuthorization();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

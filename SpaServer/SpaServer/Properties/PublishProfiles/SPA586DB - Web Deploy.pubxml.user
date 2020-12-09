@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbrnAiR+Q/EeIo7EAV1h+OwAAAAACAAAAAAAQZgAAAAEAACAAAACHIZy5OBhetHDS2lkPC88XqoLVPklOYzQuW4GLB4uP2gAAAAAOgAAAAAIAACAAAADQB1OUEKUsSGOTHReEWNoOvD45DptVq1jJMapl5LlIxIAAAADmhiMMiVz0dNXOyLwjTKjmSDIXfZERp27FEfxN7EBRYfI8eMoCCF4AJ/G9vZld5P5FvQa8f6rFbPce8hbkmwPIImJpMjjobFpYXPoK43mTqoUhxqNM1cyou1fDN8Bt1vXCMwZAIM2NfR7+oZAQCbacEWFrQilTEJM7v6bXzDDoLkAAAABeNv0HpJnvTEguipvpOdLfplSNS9Yf/qUjaSwW+UV94Eccl88rWvPR1R8zKRaIiltQocrFAkOcArOsKMrfrst+</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="SPA_DB">
+      <Value>Data Source=tcp:spa-db.database.windows.net,1433%3bInitial Catalog=SPA_DB_Mig%3bUser Id=Natkes%40spa-db%3bPassword=Nrdkhy123</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

@@ -9,7 +9,7 @@ import {AuthService} from '@auth0/auth0-angular';
 })
 export class ArtistsPageComponent implements OnInit {
 
-  baseUrl = 'https://localhost:44372/';
+  baseUrl = 'https://spa586db.azurewebsites.net/';
   public artistsSongs: ArtistsSongs[];
 
   constructor(http: HttpClient, public auth: AuthService) {

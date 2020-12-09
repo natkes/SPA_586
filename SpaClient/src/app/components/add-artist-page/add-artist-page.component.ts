@@ -11,7 +11,7 @@ import {ActivatedRoute} from '@angular/router';
   styleUrls: ['./add-artist-page.component.css']
 })
 export class AddArtistPageComponent implements OnInit {
-  baseUrl = 'https://localhost:44372/';
+  baseUrl = 'https://spa586db.azurewebsites.net/';
   createArtistForm;
   httpG: HttpClient;
   router: Router;

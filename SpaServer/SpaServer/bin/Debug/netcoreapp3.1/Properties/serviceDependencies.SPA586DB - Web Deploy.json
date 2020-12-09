@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/spa-db/databases/SPA_DB_Mig",
+      "type": "mssql.azure",
+      "connectionId": "SPA_DB_Mig",
+      "secretStore": "AzureAppSettings"
+    }
+  }
+}

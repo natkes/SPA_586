@@ -11,7 +11,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class UpdatePlaylistComponent implements OnInit {
 
 
-  baseUrl = 'https://localhost:44372/';
+  baseUrl = 'https://spa586db.azurewebsites.net/';
   public playlist: Playlist;
   id: number;
   private sub: any;

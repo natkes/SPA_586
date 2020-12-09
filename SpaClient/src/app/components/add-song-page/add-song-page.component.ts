@@ -10,7 +10,7 @@ import {Router} from '@angular/router';
   styleUrls: ['./add-song-page.component.css']
 })
 export class AddSongPageComponent implements OnInit {
-  baseUrl = 'https://localhost:44372/';
+  baseUrl = 'https://spa586db.azurewebsites.net/';
   createSongForm;
   httpG: HttpClient;
   artists: Artists[];

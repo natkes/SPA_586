@@ -8953,11 +8953,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\itomp\\Desktop\\School\\Computer Science\\Computer Science 586\\CS586_SPA_Project\\SpaServer\\SpaServer\\SpaServer.csproj",
+      "projectUniqueName": "C:\\Users\\itomp\\Desktop\\School\\Computer Science\\Computer Science 586\\CS586_SPA_Project\\SPA_586_Project\\SPA_586\\SPA_586\\SpaServer\\SpaServer\\SpaServer.csproj",
       "projectName": "SpaServer",
-      "projectPath": "C:\\Users\\itomp\\Desktop\\School\\Computer Science\\Computer Science 586\\CS586_SPA_Project\\SpaServer\\SpaServer\\SpaServer.csproj",
+      "projectPath": "C:\\Users\\itomp\\Desktop\\School\\Computer Science\\Computer Science 586\\CS586_SPA_Project\\SPA_586_Project\\SPA_586\\SPA_586\\SpaServer\\SpaServer\\SpaServer.csproj",
       "packagesPath": "C:\\Users\\itomp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\itomp\\Desktop\\School\\Computer Science\\Computer Science 586\\CS586_SPA_Project\\SpaServer\\SpaServer\\obj\\",
+      "outputPath": "C:\\Users\\itomp\\Desktop\\School\\Computer Science\\Computer Science 586\\CS586_SPA_Project\\SPA_586_Project\\SPA_586\\SPA_586\\SpaServer\\SpaServer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
