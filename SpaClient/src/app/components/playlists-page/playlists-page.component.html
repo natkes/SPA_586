@@ -1,0 +1,16 @@
+<div *ngIf="(auth.isAuthenticated$ | async)===true">
+  <button type="button" class="btn btn-dark" routerLink="/addPlaylist">Add playlist</button>
+  <br/>
+  <div class="card" style="width: 18rem;" *ngFor="let playlist of playlistsSongs">
+    <div class="card-body">
+      <h5 class="card-title">{{playlist.name}}</h5>
+      <p></p>
+      <a routerLink="/playlists/{{playlist.id}}" class="btn btn-primary">{{playlist.name}}'s Page</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+

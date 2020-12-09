@@ -1,0 +1,23 @@
+<form [formGroup]="createSongForm" (ngSubmit)="onSubmit(createSongForm.value)">
+  <div>
+    <label for="name">
+      Name
+    </label>
+    <input id="name" type="text" formControlName="name" required="required">
+  </div>
+  <div>
+  <label for = "artistId">
+    Artist
+  </label>
+  <select id="artistId" formControlName="artistId">
+    <option *ngFor="let artist of artists" value="{{artist.id}}">{{artist.name}}</option>
+  </select>
+  </div>
+  <div>
+    <label for="yearCreated">
+      Year
+    </label>
+    <input id="yearCreated" type="number" formControlName="yearCreated">
+  </div>
+  <button class="button" type="submit">Add Song</button>
+</form>

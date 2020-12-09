@@ -1,0 +1,26 @@
+<div *ngIf="(auth.isAuthenticated$ | async)===true">
+  <button type="button" class="btn btn-dark" routerLink="/addSong">Add Song</button>
+  <br/>
+  <table class='table table-striped' aria-labelledby="tableLabel">
+    <thead>
+    <tr>
+      <th>Song name</th>
+      <th>Artist name</th>
+      <th>Year Created</th>
+    </tr>
+    </thead>
+    <tbody *ngFor="let song of songs">
+    <tr>
+      <td>{{song.name}}</td>
+      <td>{{song.artist_Name}}</td>
+      <td>{{song.year}}</td>
+    </tr>
+    </tbody>
+  </table>
+
+</div>
+
+
+
+
+

@@ -1,0 +1,16 @@
+<div *ngIf="(auth.isAuthenticated$ | async)===true">
+  <button type="button" class="btn btn-dark" routerLink="/addArtist">Add Artist</button>
+  <br/>
+  <div class="card" style="width: 18rem;" *ngFor="let artist of artistsSongs">
+    <div class="card-body">
+      <h5 class="card-title">{{artist.name}}</h5>
+      <p></p>
+      <a routerLink="/artists/{{artist.id}}" class="btn btn-primary">{{artist.name}}'s Page</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+

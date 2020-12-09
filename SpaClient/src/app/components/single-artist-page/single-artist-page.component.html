@@ -1,0 +1,14 @@
+<div *ngIf="(auth.isAuthenticated$ | async)===true">
+<table class='table table-striped' aria-labelledby="tableLabel">
+  <thead>
+  <tr>
+    <th>{{ artist.name }}</th>
+  </tr>
+  </thead>
+  <tbody *ngFor="let song of artist.songs">
+  <tr>
+    <td>{{song}}</td>
+  </tr>
+  </tbody>
+</table>
+</div>

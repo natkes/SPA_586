@@ -1,0 +1,7 @@
+{
+  "domain": "dev-vvq0l7wx.us.auth0.com",
+  "clientId": "SRqNXoJHadqip88ctqyo9v5Kr0aBsT6W",
+  "audience": "{API_IDENTIFIER}",
+  "apiUri": "http://localhost:3001",
+  "appUri": "http://localhost:4200"
+}
