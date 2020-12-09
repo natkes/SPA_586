@@ -11,48 +11,48 @@ namespace SpaServer.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class SongsController : ControllerBase
+    public class Artists1Controller : ControllerBase
     {
         private readonly SPA_DBContext _context;
 
-        public SongsController(SPA_DBContext context)
+        public Artists1Controller(SPA_DBContext context)
         {
             _context = context;
         }
 
-        // GET: api/Songs
+        // GET: api/Artists1
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Song>>> GetSongs()
+        public async Task<ActionResult<IEnumerable<Artist>>> GetArtists()
         {
-            return await _context.Songs.ToListAsync();
+            return await _context.Artists.ToListAsync();
         }
 
-        // GET: api/Songs/5
+        // GET: api/Artists1/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Song>> GetSong(int id)
+        public async Task<ActionResult<Artist>> GetArtist(int id)
         {
-            var song = await _context.Songs.FindAsync(id);
+            var artist = await _context.Artists.FindAsync(id);
 
-            if (song == null)
+            if (artist == null)
             {
                 return NotFound();
             }
 
-            return song;
+            return artist;
         }
 
-        // PUT: api/Songs/5
+        // PUT: api/Artists1/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutSong(int id, Song song)
+        public async Task<IActionResult> PutArtist(int id, Artist artist)
         {
-            if (id != song.Id)
+            if (id != artist.Id)
             {
                 return BadRequest();
             }
 
-            _context.Entry(song).State = EntityState.Modified;
+            _context.Entry(artist).State = EntityState.Modified;
 
             try
             {
@@ -60,7 +60,7 @@ namespace SpaServer.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!SongExists(id))
+                if (!ArtistExists(id))
                 {
                     return NotFound();
                 }
@@ -73,37 +73,37 @@ namespace SpaServer.Controllers
             return NoContent();
         }
 
-        // POST: api/Songs
+        // POST: api/Artists1
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<Song>> PostSong(Song song)
+        public async Task<ActionResult<Artist>> PostArtist(Artist artist)
         {
-            _context.Songs.Add(song);
+            _context.Artists.Add(artist);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetSong", new { id = song.Id }, song);
+            return CreatedAtAction("GetArtist", new { id = artist.Id }, artist);
         }
 
-        // DELETE: api/Songs/5
+        // DELETE: api/Artists1/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<Song>> DeleteSong(int id)
+        public async Task<ActionResult<Artist>> DeleteArtist(int id)
         {
-            var song = await _context.Songs.FindAsync(id);
-            if (song == null)
+            var artist = await _context.Artists.FindAsync(id);
+            if (artist == null)
             {
                 return NotFound();
             }
 
-            _context.Songs.Remove(song);
+            _context.Artists.Remove(artist);
             await _context.SaveChangesAsync();
 
-            return song;
+            return artist;
         }
 
-        private bool SongExists(int id)
+        private bool ArtistExists(int id)
         {
-            return _context.Songs.Any(e => e.Id == id);
+            return _context.Artists.Any(e => e.Id == id);
         }
     }
 }
